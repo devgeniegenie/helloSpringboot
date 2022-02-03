@@ -43,7 +43,7 @@ public class HelloController {
     //   객체면 MappingJackson2HttpMessageConverter
     //   byte 처리 등 기타 : HttpMessageConverter 동작
     public Hello helloApi(@RequestParam("name") String name){
-        Hello hello = new Hello();:
+        Hello hello = new Hello();
         hello.setName(name);
         return hello;
     }
