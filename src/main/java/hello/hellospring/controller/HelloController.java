@@ -48,17 +48,17 @@ public class HelloController {
         return hello;
     }
 
-    @Getter
-    @Setter
+
     static class Hello {
+        // 자바빈 규약
         private String name;
 
-        /* 자바빈 규약
-        public String getName(){
+        public String getName() {
             return name;
         }
-        public void setName(String name){
+        public void setName(String name) {
             this.name = name;
-        }*/
+        }
+
     }
 }
