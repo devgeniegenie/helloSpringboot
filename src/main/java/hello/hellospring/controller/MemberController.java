@@ -18,6 +18,7 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+        System.out.println("memberService = " + memberService.getClass());
     }
 
     @GetMapping("members/new")
@@ -26,7 +27,7 @@ public class MemberController {
     }
 
     @PostMapping("/members/new")
-    public String create(MemberForm form){
+    public String create(MemberForm form) {
         Member member = new Member();
         member.setName(form.getName());
 
